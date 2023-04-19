@@ -1,0 +1,18 @@
+header {
+    background-color:beige;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+h2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: fantasy, sans-serif;
+    font-size: 2em;
+    color: blueviolet;
+}
