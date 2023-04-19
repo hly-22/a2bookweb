@@ -9,7 +9,7 @@ header {
     width: 130px;
 }
 
-#myHeader {
+#navigationBar {
     display: block;
     margin-right: 20px;
     font-family: fantasy, sans-serif;
@@ -26,18 +26,28 @@ header a:visited {
 }
 
 footer {
-    background-color: dimgray;
+    background-color: #A0A02C;
     color: white;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 footer a:link {
     color:white;
     text-decoration: none;
+    font-family: fantasy, sans-serif;
 }
 
 footer a:visited {
     color:white;
     text-decoration: none;
+    font-family: fantasy, sans-serif;
+}
+
+nav {
+    color: white;
+    font-family: fantasy, sans-serif;
+    font-size: 17px;
 }
 
 img {
