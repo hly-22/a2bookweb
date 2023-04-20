@@ -22,7 +22,46 @@
         </header>
         <br>
         <main>
-
+            <h2>CONTACT US</h2>
+            <div class="formFormat">
+                <form action="form-processing" method="post" target="_blank">
+                    <label class="formHeading" for="contactPurpose">Contact Purpose: </label>
+                    <select id="contactPurpose" name="contactPurpose" required>
+                        <option value="">Select a purpose</option>
+                        <option value="sell">I want to sell books</option>
+                        <option value="buy">I want to buy books</option>
+                    </select>
+                    <br><br>
+                    <label for="customerName">Name: </label>
+                    <input id="customerName" name="customerName" type="text" required>
+                    <br><br>
+                    <label for="customerEmail">Email: </label>
+                    <input id="customerEmail" name="customerEmail" type="email" required>
+                    <br><br>
+                    <label for="customerPhone">Phone Number: </label>
+                    <input id="customerPhone" name="customerPhone" type="number" required>
+                    <br><br>
+                    <p id="contactPreference">Contact Preference</p>
+                    <input id="contactPhone" name="contactPreference" type="checkbox" value="phone">
+                    <label for="contactPhone">By phone</label>
+                    <br>
+                    <input id="contactEmail" name="contactPreference" type="checkbox" value="email">
+                    <label for="contactEmail">By email</label>
+                    <br><br>
+                    <p>Do you wish to receive our weekly newsletter?</p>
+                    <input id="receiveYes" name="receiveNewsletter" type="radio" value="yes" checked>
+                    <label for="receiveYes">Yes</label>
+                    <input id="receiveNo" name="receiveNewsletter" type="radio" value="no">
+                    <label for="receiveNo">No</label>
+                    <br><br>
+                    <p>Notes: </p>
+                    <textarea id="extraNotes" name="extraNotes" rows="4" cols="30" type="text">
+                    </textarea>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
         </main>
         <footer>
             <nav>
