@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>The Book Spot</title>
+        <title>Contact</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -11,18 +11,57 @@
                 <img id="myLogo" src="/images/logo.png" alt="Logo">
             </a>
             <h1 id="navigationBar">
-                <a href="index.html">Home</a>
+                <a class="navigationLink" href="index.html">Home</a>
                 &nbsp;
-                <a href="fiction.html">Fiction</a>
+                <a class="navigationLink" href="fiction.html">Fiction</a>
                 &nbsp;
-                <a href="nonfiction.html">Non-Fiction</a>
+                <a class="navigationLink" href="nonfiction.html">Non-Fiction</a>
                 &nbsp;
-                <a href="contact.html">Contact Us</a>
+                <a class="navigationLink" href="contact.html">Contact Us</a>
             </h1>
         </header>
         <br>
         <main>
-
+            <h2>CONTACT US</h2>
+            <div class="formFormat">
+                <form action="form-processing" method="post" target="_blank">
+                    <label class="formHeading" for="contactPurpose">Contact Purpose: </label>
+                    <select id="contactPurpose" name="contactPurpose" required>
+                        <option value="">Select a purpose</option>
+                        <option value="sell">I want to sell books</option>
+                        <option value="buy">I want to buy books</option>
+                    </select>
+                    <br><br>
+                    <label for="customerName">Name: </label>
+                    <input id="customerName" name="customerName" type="text" required>
+                    <br><br>
+                    <label for="customerEmail">Email: </label>
+                    <input id="customerEmail" name="customerEmail" type="email" required>
+                    <br><br>
+                    <label for="customerPhone">Phone Number: </label>
+                    <input id="customerPhone" name="customerPhone" type="number" required>
+                    <br><br>
+                    <p id="contactPreference">Contact Preference</p>
+                    <input id="contactPhone" name="contactPreference" type="checkbox" value="phone">
+                    <label for="contactPhone">By phone</label>
+                    <br>
+                    <input id="contactEmail" name="contactPreference" type="checkbox" value="email">
+                    <label for="contactEmail">By email</label>
+                    <br><br>
+                    <p>Do you wish to receive our weekly newsletter?</p>
+                    <input id="receiveYes" name="receiveNewsletter" type="radio" value="yes" checked>
+                    <label for="receiveYes">Yes</label>
+                    <input id="receiveNo" name="receiveNewsletter" type="radio" value="no">
+                    <label for="receiveNo">No</label>
+                    <br><br>
+                    <p>Notes: </p>
+                    <textarea id="extraNotes" name="extraNotes" rows="4" cols="30" type="text">
+                    </textarea>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
         </main>
         <footer>
             <nav>
@@ -34,7 +73,7 @@
                 &nbsp; 
                 <span>Copyright</span> 
                 &nbsp;
-                <a href="contact.html">Contact Us</a>
+                <a class="navigationLink" href="contact.html">Contact Us</a>
             </nav>
         </footer>
     </body>

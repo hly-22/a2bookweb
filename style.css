@@ -1,3 +1,26 @@
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: fantasy, sans-serif;
+    font-size: 2.5em;
+    color: black;
+    font-weight: bolder;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-family: fantasy, sans-serif;
+    font-size: 2em;
+    color: black;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 header {
     background-color:beige;
     display: flex;
@@ -6,6 +29,9 @@ header {
 }
 
 #myLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 130px;
 }
 
@@ -16,13 +42,8 @@ header {
     font-size: 1.8em;
 }
 
-header a:link {
-    text-decoration: none;
-}
-
-header a:visited {
-    color:black;
-    text-decoration: none;
+.navigationLink:hover {
+    color: #825E6B;
 }
 
 footer {
@@ -32,35 +53,176 @@ footer {
     justify-content: space-evenly;
 }
 
-footer a:link {
-    color:white;
-    text-decoration: none;
-    font-family: fantasy, sans-serif;
-}
-
-footer a:visited {
-    color:white;
-    text-decoration: none;
-    font-family: fantasy, sans-serif;
-}
-
 nav {
     color: white;
     font-family: fantasy, sans-serif;
     font-size: 17px;
 }
 
-img {
+.bookCover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
+    width: 280px;
+    border: 1px solid black;
 }
 
-h2 {
+.bookImage {
+    width: 100%;
     display: block;
+    border: 1px solid black;
+}
+
+.mainImage {
+    width: 280px;
+}
+
+.otherImage {
+    width: 120px;
+    padding-left: 50px;
+}
+
+ul.breadcrumb {
+    display: flex;
+    justify-content: center;
+    padding: 10px 16px;
+    list-style: none;
+    background-color: antiquewhite;
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 25px;
     font-family: fantasy, sans-serif;
-    font-size: 2em;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">";
+}
+
+ul.breadcrumb li a:hover {
+    text-decoration: underline;
+  }
+
+content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookInformation {
+    text-align: right;
+    margin-left: 50px;
+}
+
+.addToCart {
+    font-size: 19px;
+    font-family: fantasy, sans-serif;
+    background-color: #A0A02C;
+    color: white;
+    padding: 10px 20px;
+    margin-top: -20px;
+    text-align: center;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.addToCart:hover {
+    background-color: white;
+    color: #A0A02C;
+    border-color: #A0A02C;
+}
+
+.bookContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 50px;
+}
+
+.bookName {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bookAuthor {
+    font-size: 30px;
+    font-style: italic;
+    color: lightslategray;
+    margin-top: -40px;
+    margin-bottom: -1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bookDescription {
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+.bookEdition {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+th {
+    text-align: left;
+    color: lightslategray;
+    padding-right: 20px;
+}
+
+.bookEdition::first-line {
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.bookTab {
+    display: flex;
+    justify-content: center;
+}
+
+.bookCell {
+    padding: 3px 30px;
+}
+
+.formFormat {
+    display: flex;
+    justify-content: center;
+    margin: 40px 350px;
+    padding: 50px;
+    width: 750;
+    background-color: rgb(216, 223, 220);
+}
+
+label, select, input, textarea, form p {
+    font-family: fantasy, sans-serif;
+    font-size: 1.4em;
+}
+
+.videoRecommendation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoCaption {
+    font-size: 28px;
+    font-family: fantasy, sans-serif;
+    margin-right: 30px;
+}
+
+.videoArrow {
+    width: 100px;
+    margin-right: 30px;
 }
