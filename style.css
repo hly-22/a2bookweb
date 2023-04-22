@@ -46,6 +46,54 @@ header {
     color: #825E6B;
 }
 
+.subjectTitle:hover {
+    color: #825E6B;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.imageEffect {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.textEffect {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .imageEffect {
+    opacity: 0.5;
+}
+
+.container:hover .textEffect {
+    opacity: 1;
+}
+
+.text {
+    color: black;
+    font-size: 30px;
+    font-family: fantasy,sans-serif;
+    background-color: antiquewhite;
+    padding: 15px;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 8px;
+}
+
 footer {
     background-color: #A0A02C;
     color: white;
