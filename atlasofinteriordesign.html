@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Atlas of Interior Design</title>
+        <title>The Book Spot</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -10,15 +11,12 @@
             <a href="index.html">
                 <img id="myLogo" src="/images/logo.png" alt="Logo">
             </a>
-            <h1 id="navigationBar">
+            <nav id="navigationHead">
                 <a class="navigationLink" href="index.html">Home</a>
-                &nbsp;
                 <a class="navigationLink" href="fiction.html">Fiction</a>
-                &nbsp;
                 <a class="navigationLink" href="nonfiction.html">Non-Fiction</a>
-                &nbsp;
                 <a class="navigationLink" href="contact.html">Contact Us</a>
-            </h1>
+            </nav>
         </header>
         <br>
         <main>
@@ -29,21 +27,23 @@
             </ul>
             <br>
             <content>
-                <table>
-                    <tr>
-                        <td class="mainImage" rowspan="3"><img class="bookImage" src="/images/atlas.jpg" alt="Atlas of Interior Design"></td>
-                        <td class="otherImage"><img class="bookImage" src="/images/atlas1.jpeg" alt="Atlas of Interior Design"></td>
+                <div class="mainImage">
+                    <img class="bookImage" src="/images/design.jpeg" alt="Atlas of Interior Design">
+                </div>
+                <table class="furtherImage">
+                    <tr class="mobileImage">
+                        <td class="otherImage"><img class="bookImage" src="/images/design1.jpeg" alt="Atlas of Interior Design"></td>
                     </tr>
-                    <tr>
-                        <td class="otherImage"><img class="bookImage" src="/images/atlas2.jpeg" alt="Atlas of Interior Design"></td>
+                    <tr class="mobileImage">
+                        <td class="otherImage"><img class="bookImage" src="/images/design2.jpeg" alt="Atlas of Interior Design"></td>
                     </tr>
-                    <tr>
-                        <td class="otherImage"><img class="bookImage" src="/images/atlas3.jpeg" alt="Atlas of Interior Design"></td>
+                    <tr class="mobileImage">
+                        <td class="otherImage"><img class="bookImage" src="/images/design3.webp" alt="Atlas of Interior Design"></td>
                     </tr>
                 </table>
                 <table class="bookInformation">
                     <tr>
-                        <td><h2>$52.88</h2></td>
+                        <td><h2>$32.89</h2></td>
                     </tr>
                     <tr>
                         <td><button class="addToCart">Add to Cart</button></td>
@@ -85,7 +85,7 @@
             </content>
         </main>
         <footer>
-            <nav>
+            <nav id="footerNav">
                 <span>About Us</span>
                 &nbsp; 
                 <span>Privacy Policy</span>
@@ -94,7 +94,7 @@
                 &nbsp; 
                 <span>Copyright</span> 
                 &nbsp;
-                <a class="navigationLink" href="contact.html">Contact Us</a>
+                <a class="footerLink" href="contact.html">Contact Us</a>
             </nav>
         </footer>
     </body>

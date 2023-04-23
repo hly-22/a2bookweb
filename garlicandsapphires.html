@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Garlic and Sapphires: The Secret Life of a Critic in Disguise</title>
+        <title>The Book Spot</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -10,15 +11,12 @@
             <a href="index.html">
                 <img id="myLogo" src="/images/logo.png" alt="Logo">
             </a>
-            <h1 id="navigationBar">
+            <nav id="navigationHead">
                 <a class="navigationLink" href="index.html">Home</a>
-                &nbsp;
                 <a class="navigationLink" href="fiction.html">Fiction</a>
-                &nbsp;
                 <a class="navigationLink" href="nonfiction.html">Non-Fiction</a>
-                &nbsp;
                 <a class="navigationLink" href="contact.html">Contact Us</a>
-            </h1>
+            </nav>
         </header>
         <br>
         <main>
@@ -29,16 +27,18 @@
             </ul>
             <br>
             <content>
-                <table>
-                    <tr>
-                        <td class="mainImage" rowspan="3"><img class="bookImage" src="/images/garlic.jpg" alt="Garlic and Sapphires: The Secret Life of a Critic in Disguise"></td>
-                        <td class="otherImage"><img class="bookImage" src="/images/garlic1.jpeg" alt="Garlic and Sapphires: The Secret Life of a Critic in Disguise"></td>
+                <div class="mainImage">
+                    <img class="bookImage" src="/images/garlic.jpg" alt="Garlic and Sapphires">
+                </div>
+                <table class="furtherImage">
+                    <tr class="mobileImage">
+                        <td class="otherImage"><img class="bookImage" src="/images/garlic1.jpeg" alt="Garlic and Sapphires"></td>
                     </tr>
-                    <tr>
-                        <td class="otherImage"><img class="bookImage" src="/images/garlic2.jpeg" alt="Garlic and Sapphires: The Secret Life of a Critic in Disguise"></td>
+                    <tr class="mobileImage">
+                        <td class="otherImage"><img class="bookImage" src="/images/garlic2.jpeg" alt="Garlic and Sapphires"></td>
                     </tr>
-                    <tr>
-                        <td class="otherImage"><img class="bookImage" src="/images/garlic3.jpeg" alt="Garlic and Sapphires: The Secret Life of a Critic in Disguise"></td>
+                    <tr class="mobileImage">
+                        <td class="otherImage"><img class="bookImage" src="/images/garlic3.jpeg" alt="Garlic and Sapphires"></td>
                     </tr>
                 </table>
                 <table class="bookInformation">
@@ -86,7 +86,7 @@
             </content>
         </main>
         <footer>
-            <nav>
+            <nav id="footerNav">
                 <span>About Us</span>
                 &nbsp; 
                 <span>Privacy Policy</span>
@@ -95,7 +95,7 @@
                 &nbsp; 
                 <span>Copyright</span> 
                 &nbsp;
-                <a class="navigationLink" href="contact.html">Contact Us</a>
+                <a class="footerLink" href="contact.html">Contact Us</a>
             </nav>
         </footer>
     </body>

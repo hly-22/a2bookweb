@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Quiet: The Power of Introverts in a World That Can't Stop Talking</title>
+        <title>The Book Spot</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -10,15 +11,12 @@
             <a href="index.html">
                 <img id="myLogo" src="/images/logo.png" alt="Logo">
             </a>
-            <h1 id="navigationBar">
+            <nav id="navigationHead">
                 <a class="navigationLink" href="index.html">Home</a>
-                &nbsp;
                 <a class="navigationLink" href="fiction.html">Fiction</a>
-                &nbsp;
                 <a class="navigationLink" href="nonfiction.html">Non-Fiction</a>
-                &nbsp;
                 <a class="navigationLink" href="contact.html">Contact Us</a>
-            </h1>
+            </nav>
         </header>
         <br>
         <main>
@@ -29,15 +27,17 @@
             </ul>
             <br>
             <content>
-                <table>
-                    <tr>
-                        <td class="mainImage" rowspan="3"><img class="bookImage" src="/images/quiet.jpeg" alt="Quiet: The Power of Introverts in a World That Can't Stop Talking"></td>
+                <div class="mainImage">
+                    <img class="bookImage" src="/images/quiet.jpeg" alt="Quiet: The Power of Introverts in a World That Can't Stop Talking">
+                </div>
+                <table class="furtherImage">
+                    <tr class="mobileImage">
                         <td class="otherImage"><img class="bookImage" src="/images/quiet1.jpeg" alt="Quiet: The Power of Introverts in a World That Can't Stop Talking"></td>
                     </tr>
-                    <tr>
+                    <tr class="mobileImage">
                         <td class="otherImage"><img class="bookImage" src="/images/quiet2.png" alt="Quiet: The Power of Introverts in a World That Can't Stop Talking"></td>
                     </tr>
-                    <tr>
+                    <tr class="mobileImage">
                         <td class="otherImage"><img class="bookImage" src="/images/quiet3.png" alt="Quiet: The Power of Introverts in a World That Can't Stop Talking"></td>
                     </tr>
                 </table>
@@ -86,7 +86,7 @@
             </content>
         </main>
         <footer>
-            <nav>
+            <nav id="footerNav">
                 <span>About Us</span>
                 &nbsp; 
                 <span>Privacy Policy</span>
@@ -95,7 +95,7 @@
                 &nbsp; 
                 <span>Copyright</span> 
                 &nbsp;
-                <a class="navigationLink" href="contact.html">Contact Us</a>
+                <a class="footerLink" href="contact.html">Contact Us</a>
             </nav>
         </footer>
     </body>

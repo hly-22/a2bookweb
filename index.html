@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>The Book Spot</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -10,15 +11,12 @@
             <a href="index.html">
                 <img id="myLogo" src="/images/logo.png" alt="Logo">
             </a>
-            <h1 id="navigationBar">
+            <nav id="navigationHead">
                 <a class="navigationLink" href="index.html">Home</a>
-                &nbsp;
                 <a class="navigationLink" href="fiction.html">Fiction</a>
-                &nbsp;
                 <a class="navigationLink" href="nonfiction.html">Non-Fiction</a>
-                &nbsp;
                 <a class="navigationLink" href="contact.html">Contact Us</a>
-            </h1>
+            </nav>
         </header>
         <br>
         <main>
@@ -92,16 +90,23 @@
             <p><h3>MORE CATEGORIES COMING...</h3></p>
             <br>
             <section class="videoRecommendation">
-                <p class="videoCaption"><i>Can't choose a book?</i><br><strong>Check this for recommendations!</strong></p>
+                <div class="videoCaption">
+                    <i>Can't choose a book?</i>
+                    <br>
+                    <strong>Check this for recommendations!</strong>
+                </div>
                 <p><img class="videoArrow" src="/images/arrow.webp"></p>
-                <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/NLf4I75-ymE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                </iframe>
+                <p><img class="mobileArrow" src="/images/arrowmobile.gif"></p>
+                <div class="videoContent">
+                    <iframe class="videoSize" width="560" height="315" 
+                    src="https://www.youtube.com/embed/NLf4I75-ymE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                </div>
             </section>
         </main>
-        <br>
+        <br><br>
         <footer>
-            <nav>
+            <nav id="footerNav">
                 <span>About Us</span>
                 &nbsp; 
                 <span>Privacy Policy</span>
@@ -110,7 +115,7 @@
                 &nbsp; 
                 <span>Copyright</span> 
                 &nbsp;
-                <a class="navigationLink" href="contact.html">Contact Us</a>
+                <a class="footerLink" href="contact.html">Contact Us</a>
             </nav>
         </footer>
     </body>
