@@ -1,3 +1,4 @@
+/* GENERAL STYLES */
 body {
     background-color: white;
     display: flex;
@@ -30,6 +31,13 @@ a {
     color: inherit;
 }
 
+/* Header and Footer */
+nav {
+    color: white;
+    font-family: fantasy, sans-serif;
+    font-size: 17px;
+}
+
 header {
     background-color:beige;
     display: flex;
@@ -42,10 +50,6 @@ header {
     margin-left: auto;
     margin-right: auto;
     width: 130px;
-}
-
-#navigationHead {
-
 }
 
 .navigationLink {
@@ -61,15 +65,61 @@ header {
     color: #825E6B;
 }
 
+footer {
+    background-color: #A0A02C;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerLink:hover {
+    color: #825E6B;
+}
+
+/* Subject Name Effect on Homepage */
 .subjectTitle:hover {
     color: #825E6B;
 }
 
+/* Coverpage Book Image Format */
+.bookCover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    border: 1px solid black;
+}
+
+/* Book Detail Page Coverpage Image */
+.bookTab {
+    display: flex;
+    justify-content: center;
+}
+
+.bookCell {
+    padding: 3px 30px;
+}
+
+.bookImage {
+    width: 100%;
+    display: block;
+    border: 1px solid black;
+}
+
+.mainImage {
+    width: 280px;
+}
+
+.otherImage {
+    width: 120px;
+    padding-left: 50px;
+}
+
+/* Effect When Hovering a Coverpage Book Image */
 .container {
     position: relative;
     width: 50%;
 }
-
+ 
 .imageEffect {
     opacity: 1;
     display: block;
@@ -109,45 +159,31 @@ header {
     border-radius: 8px;
 }
 
-footer {
-    background-color: #A0A02C;
+/* IFrame Information Format */
+.videoRecommendation {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.footerLink:hover {
-    color: #825E6B;
-}
-
-nav {
-    color: white;
+.videoCaption {
+    font-size: 28px;
     font-family: fantasy, sans-serif;
-    font-size: 17px;
+    margin-right: 30px;
 }
 
-.bookCover {
+.videoArrow {
+    width: 100px;
+    margin-right: 30px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 280px;
-    border: 1px solid black;
 }
 
-.bookImage {
-    width: 100%;
-    display: block;
-    border: 1px solid black;
+.mobileArrow {
+    display: none;
 }
 
-.mainImage {
-    width: 280px;
-}
-
-.otherImage {
-    width: 120px;
-    padding-left: 50px;
-}
-
+/* Breadcrumbs for Book Detail Pages */
 .breadcrumb {
     display: flex;
     justify-content: center;
@@ -176,6 +212,7 @@ nav {
     text-decoration: underline;
   }
 
+/* CONTENT OF BOOK IMAGES, PRICE, AND ADD-TO-CART BUTTON */
 content {
     display: flex;
     flex-wrap: nowrap;
@@ -183,11 +220,12 @@ content {
     align-items: center;
 }
 
+/* Table Contains Price and Add-to-Cart Button */
 .bookInformation {
     text-align: right;
     margin-left: 50px;
 }
-
+/* Add-to-Cart Button */
 .addToCart {
     font-size: 19px;
     font-family: fantasy, sans-serif;
@@ -207,6 +245,7 @@ content {
     border-color: #A0A02C;
 }
 
+/* Information of the Book of Book Detail Page */
 .bookContent {
     display: flex;
     flex-direction: column;
@@ -234,6 +273,7 @@ content {
     text-align: justify;
 }
 
+/* Publication Details of Book */
 .bookEdition {
     font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -251,22 +291,24 @@ th {
     font-weight: bold;
 }
 
-.bookTab {
-    display: flex;
-    justify-content: center;
-}
-
-.bookCell {
-    padding: 3px 30px;
-}
-
+/* Form */
 .formFormat {
     display: flex;
     justify-content: center;
-    margin: 40px 350px;
     padding: 50px;
-    width: 750;
     background-color: rgb(216, 223, 220);
+}
+
+.contactPreferenceBlock, .receiveNewsletterBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.divArea {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 label, select, input, textarea, form p {
@@ -274,30 +316,22 @@ label, select, input, textarea, form p {
     font-size: 1.4em;
 }
 
-.videoRecommendation {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 
-.videoCaption {
-    font-size: 28px;
-    font-family: fantasy, sans-serif;
-    margin-right: 30px;
-}
-
-.videoArrow {
-    width: 100px;
-    margin-right: 30px;
-    display: block;
-}
-
-.mobileArrow {
-    display: none;
-}
+/* MOBILE VERSION */
 
 @media screen and (max-width: 960px) {
+    /* GENERAL STYLES*/
+    h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.7em;
+        text-align: center;
+    }    
+    
+    /* Header */
     header {
         flex-direction: column;
         justify-content: center;
@@ -313,15 +347,7 @@ label, select, input, textarea, form p {
         width: 180px;
     }
 
-    h2 {
-        font-size: 2em;
-    }
-
-    h3 {
-        font-size: 1.7em;
-        text-align: center;
-    }
-
+    /* Coverpage Book Image Format */
     .bookTab {
         justify-content: center;
         flex-direction: column;
@@ -336,6 +362,7 @@ label, select, input, textarea, form p {
         width: 200px;
     }
 
+    /* IFrame Information Format */
     .videoRecommendation {
         flex-direction: column;
     }
@@ -375,21 +402,24 @@ label, select, input, textarea, form p {
         height: 100%;
     }
 
+    /* Center-Aligned Footer*/
     #footerNav {
         text-align: center;
     }
 
+    /* Breadcrumb */
     .breadcrumb {
         width: auto;
         flex-wrap: wrap;
     }
 
-    .mainImage {
-        width: 200px;
-    }
-
+    /* Book Detail Content */
     content {
         flex-direction: column;
+    }
+    
+    .mainImage {
+        width: 200px;
     }
 
     .furtherImage {
@@ -423,5 +453,17 @@ label, select, input, textarea, form p {
 
     .bookDescription {
         font-size: 18px;
+    }
+
+    /* Form */
+    form, .divArea {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    label, select, input, textarea, form p {
+        font-family: fantasy, sans-serif;
+        font-size: 1em;
     }
 }
