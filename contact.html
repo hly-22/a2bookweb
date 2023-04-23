@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact</title>
+        <title>The Book Spot</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -10,21 +11,18 @@
             <a href="index.html">
                 <img id="myLogo" src="/images/logo.png" alt="Logo">
             </a>
-            <h1 id="navigationBar">
+            <nav id="navigationHead">
                 <a class="navigationLink" href="index.html">Home</a>
-                &nbsp;
                 <a class="navigationLink" href="fiction.html">Fiction</a>
-                &nbsp;
                 <a class="navigationLink" href="nonfiction.html">Non-Fiction</a>
-                &nbsp;
                 <a class="navigationLink" href="contact.html">Contact Us</a>
-            </h1>
+            </nav>
         </header>
         <br>
         <main>
             <h2>CONTACT US</h2>
             <div class="formFormat">
-                <form action="form-processing" method="post" target="_blank">
+                <form action="" method="post" target="_blank">
                     <label class="formHeading" for="contactPurpose">Contact Purpose: </label>
                     <select id="contactPurpose" name="contactPurpose" required>
                         <option value="">Select a purpose</option>
@@ -41,22 +39,25 @@
                     <label for="customerPhone">Phone Number: </label>
                     <input id="customerPhone" name="customerPhone" type="number" required>
                     <br><br>
-                    <p id="contactPreference">Contact Preference</p>
-                    <input id="contactPhone" name="contactPreference" type="checkbox" value="phone">
-                    <label for="contactPhone">By phone</label>
-                    <br>
-                    <input id="contactEmail" name="contactPreference" type="checkbox" value="email">
-                    <label for="contactEmail">By email</label>
-                    <br><br>
-                    <p>Do you wish to receive our weekly newsletter?</p>
-                    <input id="receiveYes" name="receiveNewsletter" type="radio" value="yes" checked>
-                    <label for="receiveYes">Yes</label>
-                    <input id="receiveNo" name="receiveNewsletter" type="radio" value="no">
-                    <label for="receiveNo">No</label>
-                    <br><br>
-                    <p>Notes: </p>
-                    <textarea id="extraNotes" name="extraNotes" rows="4" cols="30" type="text">
-                    </textarea>
+                    <div class="contactPreferenceBlock">
+                        <p id="contactPreference">Contact Preference: </p>
+                        <input id="contactPhone" name="contactPreference" type="checkbox" value="phone">
+                        <label for="contactPhone">By phone</label>
+                        <input id="contactEmail" name="contactPreference" type="checkbox" value="email">
+                        <label for="contactEmail">By email</label>
+                    </div>
+                    <div class="receiveNewsletterBlock">
+                        <p>Do you wish to receive our weekly newsletter?</p>
+                        <input id="receiveYes" name="receiveNewsletter" type="radio" value="yes" checked>
+                        <label for="receiveYes">Yes</label>
+                        <input id="receiveNo" name="receiveNewsletter" type="radio" value="no">
+                        <label for="receiveNo">No</label>
+                    </div>
+                    <div class="divArea">
+                        <p>Notes: </p>
+                        <textarea id="extraNotes" name="extraNotes" rows="4" cols="30" type="text">
+                        </textarea>
+                    </div>
                     <br><br>
                     <input type="submit" value="Submit">
                     <input type="reset" value="Reset">
@@ -64,7 +65,7 @@
             </div>
         </main>
         <footer>
-            <nav>
+            <nav id="footerNav">
                 <span>About Us</span>
                 &nbsp; 
                 <span>Privacy Policy</span>
@@ -73,7 +74,7 @@
                 &nbsp; 
                 <span>Copyright</span> 
                 &nbsp;
-                <a class="navigationLink" href="contact.html">Contact Us</a>
+                <a class="footerLink" href="contact.html">Contact Us</a>
             </nav>
         </footer>
     </body>

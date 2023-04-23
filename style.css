@@ -1,3 +1,13 @@
+/* GENERAL STYLES */
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+
+}
+
 h2 {
     display: flex;
     justify-content: center;
@@ -21,6 +31,13 @@ a {
     color: inherit;
 }
 
+/* Header and Footer */
+nav {
+    color: white;
+    font-family: fantasy, sans-serif;
+    font-size: 17px;
+}
+
 header {
     background-color:beige;
     display: flex;
@@ -35,11 +52,13 @@ header {
     width: 130px;
 }
 
-#navigationBar {
+.navigationLink {
+    float: left;
     display: block;
-    margin-right: 20px;
-    font-family: fantasy, sans-serif;
-    font-size: 1.8em;
+    color: black;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 28px;
 }
 
 .navigationLink:hover {
@@ -48,23 +67,36 @@ header {
 
 footer {
     background-color: #A0A02C;
-    color: white;
     display: flex;
     justify-content: space-evenly;
 }
 
-nav {
-    color: white;
-    font-family: fantasy, sans-serif;
-    font-size: 17px;
+.footerLink:hover {
+    color: #825E6B;
 }
 
+/* Subject Name Effect on Homepage */
+.subjectTitle:hover {
+    color: #825E6B;
+}
+
+/* Coverpage Book Image Format */
 .bookCover {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 280px;
     border: 1px solid black;
+}
+
+/* Book Detail Page Coverpage Image */
+.bookTab {
+    display: flex;
+    justify-content: center;
+}
+
+.bookCell {
+    padding: 3px 30px;
 }
 
 .bookImage {
@@ -82,34 +114,105 @@ nav {
     padding-left: 50px;
 }
 
-ul.breadcrumb {
+/* Effect When Hovering a Coverpage Book Image */
+.container {
+    position: relative;
+    width: 50%;
+}
+ 
+.imageEffect {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.textEffect {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .imageEffect {
+    opacity: 0.5;
+}
+
+.container:hover .textEffect {
+    opacity: 1;
+}
+
+.text {
+    color: black;
+    font-size: 30px;
+    font-family: fantasy,sans-serif;
+    background-color: antiquewhite;
+    padding: 15px;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 8px;
+}
+
+/* IFrame Information Format */
+.videoRecommendation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoCaption {
+    font-size: 28px;
+    font-family: fantasy, sans-serif;
+    margin-right: 30px;
+}
+
+.videoArrow {
+    width: 100px;
+    margin-right: 30px;
+    display: block;
+}
+
+.mobileArrow {
+    display: none;
+}
+
+/* Breadcrumbs for Book Detail Pages */
+.breadcrumb {
     display: flex;
     justify-content: center;
     padding: 10px 16px;
     list-style: none;
     background-color: antiquewhite;
-    width: 700px;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
 }
 
-ul.breadcrumb li {
+.breadcrumb li {
     display: inline;
     font-size: 25px;
     font-family: fantasy, sans-serif;
 }
 
-ul.breadcrumb li+li:before {
+.breadcrumb li+li:before {
     padding: 8px;
     color: black;
     content: ">";
 }
 
-ul.breadcrumb li a:hover {
+.breadcrumb li a:hover {
     text-decoration: underline;
   }
 
+/* CONTENT OF BOOK IMAGES, PRICE, AND ADD-TO-CART BUTTON */
 content {
     display: flex;
     flex-wrap: nowrap;
@@ -117,11 +220,12 @@ content {
     align-items: center;
 }
 
+/* Table Contains Price and Add-to-Cart Button */
 .bookInformation {
     text-align: right;
     margin-left: 50px;
 }
-
+/* Add-to-Cart Button */
 .addToCart {
     font-size: 19px;
     font-family: fantasy, sans-serif;
@@ -141,6 +245,7 @@ content {
     border-color: #A0A02C;
 }
 
+/* Information of the Book of Book Detail Page */
 .bookContent {
     display: flex;
     flex-direction: column;
@@ -168,6 +273,7 @@ content {
     text-align: justify;
 }
 
+/* Publication Details of Book */
 .bookEdition {
     font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -185,22 +291,24 @@ th {
     font-weight: bold;
 }
 
-.bookTab {
-    display: flex;
-    justify-content: center;
-}
-
-.bookCell {
-    padding: 3px 30px;
-}
-
+/* Form */
 .formFormat {
     display: flex;
     justify-content: center;
-    margin: 40px 350px;
     padding: 50px;
-    width: 750;
     background-color: rgb(216, 223, 220);
+}
+
+.contactPreferenceBlock, .receiveNewsletterBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.divArea {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 label, select, input, textarea, form p {
@@ -208,21 +316,154 @@ label, select, input, textarea, form p {
     font-size: 1.4em;
 }
 
-.videoRecommendation {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
 
-.videoCaption {
-    font-size: 28px;
-    font-family: fantasy, sans-serif;
-    margin-right: 30px;
-}
+/* MOBILE VERSION */
 
-.videoArrow {
-    width: 100px;
-    margin-right: 30px;
+@media screen and (max-width: 960px) {
+    /* GENERAL STYLES*/
+    h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.7em;
+        text-align: center;
+    }    
+    
+    /* Header */
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navigationLink {
+        float: none;
+        width: 100%;
+        font-size: 24px;
+    }
+
+    #myLogo {
+        width: 180px;
+    }
+
+    /* Coverpage Book Image Format */
+    .bookTab {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bookCell {
+        display: block;
+    }
+
+    .bookCover {
+        width: 200px;
+    }
+
+    /* IFrame Information Format */
+    .videoRecommendation {
+        flex-direction: column;
+    }
+
+    .videoCaption {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: -38px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .videoArrow {
+        display: none;
+    }
+
+    .mobileArrow {
+        display: block;
+        width: 100px;
+        transform: scaleY(-1);
+    }
+
+    .videoContent {
+        position: relative;
+        overflow: hidden;
+        width: 90%;
+        padding-top: 56.25%;
+    }
+
+    .videoSize {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Center-Aligned Footer*/
+    #footerNav {
+        text-align: center;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+        width: auto;
+        flex-wrap: wrap;
+    }
+
+    /* Book Detail Content */
+    content {
+        flex-direction: column;
+    }
+    
+    .mainImage {
+        width: 200px;
+    }
+
+    .furtherImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .mobileImage {
+        display: table-cell;
+    }
+
+    .otherImage {
+        padding: initial;
+        width: 100px;
+    }
+
+    .bookInformation {
+        margin: auto;
+    }
+
+    .bookName {
+        font-size: 32px;
+    }
+
+    .bookAuthor {
+        font-size: 23px;
+        margin-top: -30px;
+    }
+
+    .bookDescription {
+        font-size: 18px;
+    }
+
+    /* Form */
+    form, .divArea {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    label, select, input, textarea, form p {
+        font-family: fantasy, sans-serif;
+        font-size: 1em;
+    }
 }
